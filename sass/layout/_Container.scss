@@ -1,0 +1,47 @@
+.Container{
+    width: 100%;
+    margin-top: 4rem;
+    &__Games{
+        width: 100%;
+        @include CenterizeItems();
+        &__Items{
+            @include Spacebetween();
+            flex-direction: column;
+           
+            i{
+                width: 20rem; height: 20rem;
+                @include CenterizeItems();
+                background: url(../../public/Game-Logo/index.png) no-repeat;
+                position: relative;
+                cursor: pointer;
+                &:hover img{
+                    transform: rotateY(-360deg);
+                    transition: all 0.6s ease;  
+                }
+
+                img{
+                    max-width: 45%;
+                    object-fit: cover;
+                    position: absolute;
+                    top: -20px;
+                    left: -30px;
+                    right: 0;
+                    bottom: 0;
+                    margin: auto;
+                    
+                    
+                    
+                }
+            }
+            h5{
+                font-size: $font-size-default;
+                color: $color-tertiary;
+                margin-right: 3rem;
+            }
+    
+        }
+    
+    }
+
+}
+

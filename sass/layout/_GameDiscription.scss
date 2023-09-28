@@ -1,0 +1,157 @@
+.Introduction{
+    display: flex;
+    width: 100%;
+    background-color: $color-primary;
+    border-radius: 1rem;
+&__Best{
+    width: 50%;
+    @include CenterizeItems();
+    flex-direction: column;
+}
+&__Best-Top,
+&__Best-Bottom{
+    width: 100%;
+    padding: 1rem;
+}
+&__Best-Top-Header,
+&__Best-Bottom-Header{
+    width: 100%;
+    background-color: $color-gray-dark;
+    padding: 1rem;
+    border-radius: 1rem;
+    @include CenterizeItems();
+    h1{
+        color: $color-secondry;
+        font-size: $font-size-Md;
+    }
+}
+&__Best-Top-First,
+&__Best-Top-Second,
+&__Best-Top-Third,
+&__Best-Bottom-First,
+&__Best-Bottom-Second,
+&__Best-Bottom-Third{
+    @include Spacebetween();
+
+
+   
+
+}
+&__Best-Bottom-First-Right,
+&__Best-Bottom-First-Left,
+&__Best-Bottom-Second-Right,
+&__Best-Bottom-Second-Left,
+&__Best-Bottom-Third-Right,
+&__Best-Bottom-Third-Left,
+&__Best-Top-First-Right,
+&__Best-Top-First-Left,
+&__Best-Top-Second-Right,
+&__Best-Top-Second-Left,
+&__Best-Top-Third-Right,
+&__Best-Top-Third-Left{
+    padding: 0.5rem 3rem;
+    margin: 1.5rem 0;
+    @include CenterizeItems();
+
+    h4{
+        color: $color-white;
+        font-size: $font-size-default; 
+        margin-right: 0.5rem;
+    }
+}
+&__Best-Bottom-First-Right{
+    i{
+        width: 3.2rem; height: 3.2rem;
+        display: inline-block;
+        background: url(../../public/icons/gamehub_ico.png) no-repeat  -19.8rem;
+    }
+    
+}
+&__Best-Bottom-First-Left{
+    i{
+        width: 3.2rem; height: 3.2rem;
+        display: inline-block;
+        background: url(../../public/icons/gamehub_ico.png) no-repeat  -23.1rem;    }
+    
+}
+&__Best-Bottom-Second-Right{
+    i{
+        width: 3.2rem; height: 3.2rem;
+        display: inline-block;
+        background: url(../../public/icons/gamehub_ico.png) no-repeat  -29.7rem;    }
+    
+}
+&__Best-Bottom-Second-Left{
+    i{
+        width: 3.2rem; height: 3.2rem;
+        display: inline-block;
+        background: url(../../public/icons/gamehub_ico.png) no-repeat  -26.5rem;    }
+    
+}
+&__Best-Bottom-Third-Right{
+    i{
+        width: 3.2rem; height: 3.2rem;
+        display: inline-block;
+        background: url(../../public/icons/gamehub_ico.png) no-repeat  -23.1rem;    }
+    
+}
+&__Best-Bottom-Third-Left{
+    i{
+        width: 3.2rem; height: 3.2rem;
+        display: inline-block;
+        background: url(../../public/icons/gamehub_ico.png) no-repeat  -26.5rem;    }
+    
+}
+&__Best-Top-First-Right{
+    i{
+        width: 3.2rem; height: 3.2rem;
+        display: inline-block;
+        background: url(../../public/icons/gamehub_ico.png) no-repeat  0;    }
+    
+}
+&__Best-Top-First-Left{
+    i{
+        width: 3.2rem; height: 3.2rem;
+        display: inline-block;
+        background: url(../../public/icons/gamehub_ico.png) no-repeat  -3.2rem;    }
+    
+}
+&__Best-Top-Second-Right{
+    i{
+        width: 3.2rem; height: 3.2rem;
+        display: inline-block;
+        background: url(../../public/icons/gamehub_ico.png) no-repeat  -6.6rem;    }
+    
+}
+&__Best-Top-Second-Left{
+    i{
+        width: 3.2rem; height: 3.2rem;
+        display: inline-block;
+        background: url(../../public/icons/gamehub_ico.png) no-repeat  -9.8rem;    }
+    
+}
+&__Best-Top-Third-Right{
+    i{
+        width: 3.2rem; height: 3.2rem;
+        display: inline-block;
+        background: url(../../public/icons/gamehub_ico.png) no-repeat  -13.2rem;    }
+
+}
+&__Best-Top-Third-Left{
+    i{
+        width: 3.2rem; height: 3.2rem;
+        display: inline-block;
+        background: url(../../public/icons/gamehub_ico.png) no-repeat  -16.6rem;    }
+   
+}
+&__Img{
+    width: 50%;
+    @include CenterizeItems();
+    padding: 4rem 0;
+    img{
+        max-width: 80%;
+        object-fit: cover;
+    }
+}
+
+}

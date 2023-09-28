@@ -1,0 +1,195 @@
+.container{
+    max-width: 130rem;
+    padding: 0 2rem;
+    margin: 2rem auto;
+}
+@media only screen and (max-width:1200px) {
+    .container{
+    max-width: 103rem;
+    margin: 2rem auto;
+    }
+    .Introduction{
+        @include CenterizeItems();
+        flex-direction: column-reverse;
+    }
+    .Introduction__Img{
+        width: 55%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 4rem 0;
+    }
+    .Introduction__Img img{
+        max-width: 100%;
+    }
+    .Introduction__Best{
+        @include Spacebetween();
+        width: 90%;
+        flex-direction: row;
+    }
+    .Introduction__Best-Top-First,
+    .Introduction__Best-Top-Second,
+    .Introduction__Best-Top-Third,
+    .Introduction__Best-Bottom-First,
+    .Introduction__Best-Bottom-Second,
+    .Introduction__Best-Bottom-Third{
+        flex-direction: column;
+    }
+    .Footer__Container{
+        padding: 3rem;
+    }
+    .Footer__Container__Right__Img img{
+        max-width: 6rem;
+    }
+    .Footer__Container__Mid{
+        padding: 1rem;
+        gap: 4rem;
+    }
+    .Footer__Container__Right__Text h1{
+        font-size: $font-size-default;
+    }
+    .Footer__Container__Right__Text p{
+        font-size: 1.4rem;
+    }
+    .Footer__Container__Mid__Game a{
+        font-size: 1.4rem;
+    }
+    .Footer__Container__Left__Top h1{
+        font-size: $font-size-default;
+    }
+    .Footer__Container__Mid{
+        font-size: $font-size-default;
+    }
+}
+@media only screen and (max-width:998px) {
+    .container{
+    max-width: 92rem;
+    margin: 2rem auto;
+    }
+    html{
+        font-size: 55%;
+    }
+    .AboutUs__Content{
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .AboutUs__Content-Right-Image,
+     .AboutUs__Content-Left-Image{
+        width: 5rem;
+        border-left: 0.1rem solid #fff;
+        padding-left: 5rem;
+        img{
+            width: 4rem;
+            object-fit: cover;
+        }
+     }
+     .Container__Games{
+        flex-wrap: wrap;
+    }
+    .Container__Games__Items{
+        width: 33%;
+        gap: 1.5rem;
+    }
+    .Container__Games__Items i{
+        background-position: center;
+        background-size: contain;
+    }
+    .Container__Games__Items i img{
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+    }
+    .Container__Games__Items h5{
+        margin-right: 0;
+    }
+    .Footer__Container__Right__Img img{
+        max-width: 5rem;
+    }
+    .Footer__Container{
+        flex-wrap: wrap;
+        justify-content: center;
+        column-gap: 8rem;
+        row-gap: 4rem;
+    }
+}
+@media only screen and (max-width:768px) {
+    .container{
+    max-width: 64rem;
+    margin: 2rem auto;
+    }
+    .header__Navigation{
+        display: none;
+    }
+    .hamburger{
+        display: block;
+        color: $color-white;
+        cursor: pointer;
+        font-size: 3rem;
+    }
+    .Introduction__Best{
+        flex-direction: column;
+    }
+    .Introduction{
+        margin-top: 2rem;
+    }
+    .COD__Main{
+        flex-direction: column;
+    }
+    .COD__Main__Right{
+        width: 100%;
+    }
+    .COD__Main__Left{
+        width: 100%;
+    }
+    .Footer__Container__Right__Img img{
+        display: none;
+    }
+    .Footer__Container{
+        flex-direction: column;
+    }
+    .Footer__Container__Mid{
+        width: 100%;
+    justify-content: center;
+    gap: 7rem;
+    }
+    .Footer__Container__Right__Text{
+        width: 100%;
+    }
+    .Footer__Container__Left {
+        width: 100%;
+    }
+    .Btn{
+        width: 10rem;
+        height: 3rem;
+        font-size: 1.6rem;
+    }
+}
+@media only screen and (max-width:596px) {
+    .container{
+    max-width: 100%;
+    margin: 2rem auto;
+    }
+    .Games__Main{
+        flex-direction: column;
+    }
+    .Games__Main-pics{
+        max-width: 70%;
+    }
+    .Games__Main-Img{
+        display: flex;
+        justify-content: center;
+
+    }
+    .Container__Games{
+        column-gap: 8rem;
+        row-gap: 4rem;
+    }
+    .GamesM2{
+        flex-direction: column-reverse;
+    }
+    .hamburgermenu{
+        width: 55vw;
+    }
+}
+

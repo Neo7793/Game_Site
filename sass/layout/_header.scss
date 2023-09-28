@@ -1,0 +1,31 @@
+.header{
+    padding: 1rem 3rem;
+    @include Spacebetween();
+    background-color: $color-primary;
+    box-shadow: 0 0.3rem  1.6rem rgba($color-white , 0.3);
+
+&__Navigation{
+
+}
+&__Lists{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+&__Items{
+    color: $color-white-light;
+    font-size: $font-size-Md;
+    cursor: pointer;
+
+    &:hover{
+        color: $color-secondry;
+    }
+}
+&__Picture{
+    width:3.5rem ;
+}
+&__Buttons{
+    @include CenterizeItems;
+    gap: 1rem;
+}
+}

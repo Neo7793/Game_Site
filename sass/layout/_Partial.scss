@@ -1,0 +1,55 @@
+.AboutUs{
+    padding: 1rem 0.3rem;
+&__Content{
+    @include Spacebetween();
+    column-gap: 2rem;
+    padding: 2rem;
+
+}
+&__Content-Right,
+&__Content-Left{
+    
+}
+&__Content-Right-Top,
+&__Content-Left-Top{
+    h1{
+        font-size: $font-size-default;
+        color: $color-white;
+    }
+}
+&__Content-Right-Bottom,
+&__Content-Left-Bottom{
+    background-color: $color-primary;
+    border-radius: 0.5rem;
+    @include CenterizeItems();
+    column-gap: 2rem;
+    padding: 1.5rem;
+    
+}
+&__Content-Right-Image,
+&__Content-Left-Image{
+    width: 5rem;
+    border-left: 0.1rem solid $color-white;
+    padding-left: 7rem;
+  
+    img{
+        width: 6rem;
+        object-fit: cover;
+          
+    }
+}
+&__Content-Right-Text,
+&__Content-Left-Text{
+    color: $color-white;
+    p{
+        font-size: $font-size-Sm;
+        line-height: 1.6;
+    }
+
+
+
+
+
+
+}
+}

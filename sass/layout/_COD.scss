@@ -1,0 +1,37 @@
+.COD{
+    width: 100%;
+    &__Main{
+        margin-top: 5rem;
+        width: 100%;
+        @include Spacebetween();
+   
+
+    &__Right{
+        width: 50%;
+        @include CenterizeItems();
+        flex-direction: column;
+        padding: 5rem;
+        h4{
+            font-size: $font-size-Md;
+            color: $color-tertiary;
+        }
+        p{
+            color: $color-white;
+            font-size: $font-size-default;
+            margin-top: 2rem;
+            line-height: 2  ;
+            text-align: justify;
+        }
+    }
+    &__Left{
+        @include CenterizeItems();
+        width: 50%;
+        video{
+            max-width: 100%;
+            object-fit: cover;
+            border-radius: 1rem;
+            box-shadow: 0 0 2rem rgba($color-white-light,0.5);
+        }
+    }
+    }
+}

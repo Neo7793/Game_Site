@@ -1,0 +1,86 @@
+.Footer{
+    width: 100%;
+    &__Container{
+        width: 100%;
+        padding: 4rem;
+        background-color: $color-gray-dark;
+        margin-top: 5rem;
+        @include Spacebetween();
+        gap: 3rem;
+        &__Right{
+            
+            @include CenterizeItems();
+            gap: 1.5rem;
+            &__Img{
+                img{
+                    max-width: 8rem; 
+                    object-fit: cover
+                }
+
+            }
+            &__Text{
+               display: flex;
+                flex-direction: column;
+                gap: 3rem;
+
+                h1{
+                    color: $color-tertiary;
+                    font-size: $font-size-Md;
+                }
+                p{
+                    font-size: $font-size-default;
+                    color: $color-white;
+                }
+
+            }
+        }
+        &__Mid{
+            
+            @include Spacebetween();
+            padding: 2rem;
+            gap: 6rem;
+            &__Game{
+                display: flex;
+                flex-direction: column;
+                gap: 1.5rem;
+                h1{
+                    color: $color-tertiary;
+                    font-size: $font-size-Md;
+                }
+                a{
+                    text-decoration: none;
+                    color: $color-white;
+                    font-size: $font-size-default;
+                    cursor: pointer;
+                }
+                
+    
+            }
+        }
+    
+        &__Left{
+            
+            @include CenterizeItems();
+            flex-direction: column;
+            &__Top{
+                h1{
+                    color: $color-tertiary;
+                    font-size: $font-size-Md;
+                }
+    
+            }
+            &__Logo{
+                @include CenterizeItems();
+                gap: 3rem;
+                img{
+                    max-width: 3rem;
+                    max-height: 3rem;
+                    color: $color-white;
+                }
+    
+            }
+        }
+    }
+    
+    }
+

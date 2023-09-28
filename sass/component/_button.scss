@@ -1,0 +1,21 @@
+.Btn{
+    @include CenterizeItems ();
+    width: 13rem;
+    height: 4rem;
+    border-radius: 0.5rem;
+    border: 0.1rem solid $color-secondry;
+    color: $color-white;
+    font-size: $font-size-Md;
+    cursor: pointer;
+
+    &__Bg-Yellow{
+        background-color: $color-secondry;
+    }
+    &__Outline-Yellow{
+        color: $color-secondry;
+        &:hover{
+        background-color: $color-secondry;
+        color: $color-white;
+        }
+    }
+}

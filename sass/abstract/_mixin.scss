@@ -1,0 +1,11 @@
+@mixin CenterizeItems {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+@mixin Spacebetween {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

@@ -1,0 +1,25 @@
+            // import abstract
+@import "abstract/variable";
+@import "abstract/mixin";
+@import "abstract/function";
+        //  import Base
+@import "Base/reset";
+@import "Base/typography";
+
+
+        //  import layout
+@import "layout/header";
+@import "layout/Slider";
+@import "layout/Partial";
+@import "layout/Games";
+@import "layout/GameDiscription";
+@import "layout/Container";
+@import "layout/COD";
+@import "layout/Footer";
+@import "layout/hamburger";
+
+        //  import component
+@import "component/button";
+
+        //  import pages
+@import "pages/home";
